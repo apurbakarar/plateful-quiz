@@ -1,0 +1,859 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Take this 1-minute cookware safety quiz to claim a $310 discount."
+    />
+    <title>Cookware Safety Quiz</title>
+
+    <link rel="stylesheet" href="./css/style.css?v=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <button class="back-btn" id="backBtn" type="button" aria-label="Go back">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <line x1="19" y1="12" x2="5" y2="12" />
+          <polyline points="12 19 5 12 12 5" />
+        </svg>
+        Back
+      </button>
+      <img class="logo" src="images/logo.png" alt="Plateful logo" />
+    </header>
+
+    <main id="main">
+      <!-- 1. Intro: age -->
+      <section class="screen" id="screen-intro" data-step="intro">
+        <h2>Take This 1-Minute Quiz To Claim a $310 Discount</h2>
+        <p class="subhead"><strong>What&rsquo;s your age range?</strong></p>
+        <div
+          class="options"
+          role="radiogroup"
+          aria-label="Age range"
+          data-question="age"
+          data-auto="true"
+        >
+          <label class="option"
+            ><input type="radio" name="age" value="Under 40" />Under 40</label
+          >
+          <label class="option"
+            ><input type="radio" name="age" value="41-64" />41-64</label
+          >
+          <label class="option"
+            ><input type="radio" name="age" value="65+" />65+</label
+          >
+        </div>
+        <button class="btn-primary" id="btn-age-next" type="button" data-next>
+          Next
+          <span class="arrow" aria-hidden="true">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              viewBox="0 0 256 256"
+            >
+              <rect width="20" height="20" fill="none"></rect>
+              <line
+                x1="40"
+                y1="128"
+                x2="216"
+                y2="128"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="24"
+              ></line>
+              <polyline
+                points="144 56 216 128 144 200"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="24"
+              ></polyline>
+            </svg>
+          </span>
+        </button>
+      </section>
+
+      <!-- 2. Frequency -->
+      <section class="screen" id="screen-frequency" data-step="frequency">
+        <h2>How often do you cook at home?</h2>
+        <div
+          class="options"
+          role="radiogroup"
+          aria-label="Cooking frequency"
+          data-question="frequency"
+          data-auto="true"
+        >
+          <label class="option"
+            ><input type="radio" name="frequency" value="Daily" />🍳
+            Daily</label
+          >
+          <label class="option"
+            ><input
+              type="radio"
+              name="frequency"
+              value="A few times a week"
+            />📆 A few times a week</label
+          >
+          <label class="option"
+            ><input type="radio" name="frequency" value="Occasionally" />🕒
+            Occasionally</label
+          >
+          <label class="option"
+            ><input type="radio" name="frequency" value="Rarely" />❓
+            Rarely</label
+          >
+        </div>
+      </section>
+
+      <!-- 3. Food types -->
+      <section class="screen" id="screen-food" data-step="food">
+        <h2>What do you usually cook?</h2>
+        <div
+          class="options"
+          role="radiogroup"
+          aria-label="Food types"
+          data-question="food"
+          data-auto="true"
+        >
+          <label class="option"
+            ><input type="radio" name="food" value="Eggs & breakfast" />🍳 Eggs
+            &amp; breakfast</label
+          >
+          <label class="option"
+            ><input type="radio" name="food" value="Meat, chicken & fish" />🥩
+            Meat, chicken &amp; fish</label
+          >
+          <label class="option"
+            ><input type="radio" name="food" value="Veggies & stir-fries" />🥦
+            Veggies &amp; stir-fries</label
+          >
+          <label class="option"
+            ><input type="radio" name="food" value="A mix of everything" />🍽 A
+            mix of everything</label
+          >
+        </div>
+      </section>
+
+      <!-- 4. Pan use (multi) -->
+      <section class="screen" id="screen-pan-use" data-step="pan-use">
+        <h2>How Do You Use Your Pan?</h2>
+        <p class="hint">Select all that apply</p>
+        <div
+          class="options"
+          role="group"
+          aria-label="Pan usage"
+          data-question="panUse"
+        >
+          <label class="option"
+            ><input type="checkbox" name="panUse" value="Gas stovetop" />🔥 Gas
+            stovetop</label
+          >
+          <label class="option"
+            ><input type="checkbox" name="panUse" value="Induction" />⚡
+            Induction</label
+          >
+          <label class="option"
+            ><input type="checkbox" name="panUse" value="Electric stovetop" />🔌
+            Electric stovetop</label
+          >
+          <label class="option"
+            ><input type="checkbox" name="panUse" value="Oven use" />🔥 Oven
+            use</label
+          >
+        </div>
+        <button class="btn-primary" type="button" data-next>
+          Next
+          <span class="arrow" aria-hidden="true">
+            <img
+              src="./images/arrow.png"
+              alt="arrownext"
+              class="arrowimg"
+              width="25"
+              height="25"
+              aria-hidden="true"
+            />
+          </span>
+        </button>
+      </section>
+
+      <!-- 5. Heat -->
+      <section class="screen" id="screen-heat" data-step="heat">
+        <h2>What heat do you usually cook on?</h2>
+        <div
+          class="options"
+          role="radiogroup"
+          aria-label="Heat level"
+          data-question="heat"
+          data-auto="true"
+        >
+          <label class="option"
+            ><input type="radio" name="heat" value="Mostly high" />🔥🔥🔥 Mostly
+            high</label
+          >
+          <label class="option"
+            ><input type="radio" name="heat" value="Mostly medium" />🔥🔥 Mostly
+            medium</label
+          >
+          <label class="option"
+            ><input type="radio" name="heat" value="Mostly low" />🔥 Mostly
+            low</label
+          >
+          <label class="option"
+            ><input type="radio" name="heat" value="A mix of everything" />A mix
+            of everything</label
+          >
+        </div>
+      </section>
+
+      <!-- 6. Lifespan -->
+      <section class="screen" id="screen-lifespan" data-step="lifespan">
+        <h2>How Long Do You Typically Keep a Pan?</h2>
+        <div
+          class="options"
+          role="radiogroup"
+          aria-label="Pan lifespan"
+          data-question="lifespan"
+          data-auto="true"
+        >
+          <label class="option"
+            ><input type="radio" name="lifespan" value="Less than a year" />⏱
+            Less than a year</label
+          >
+          <label class="option"
+            ><input type="radio" name="lifespan" value="1-2 years" />📅 1–2
+            years</label
+          >
+          <label class="option"
+            ><input type="radio" name="lifespan" value="Several years" />🗓
+            Several years</label
+          >
+          <label class="option"
+            ><input
+              type="radio"
+              name="lifespan"
+              value="Until it stops working"
+            />♻️ Until it stops working</label
+          >
+        </div>
+      </section>
+
+      <!-- 7. Cookware type (image cards) -->
+      <section class="screen" id="screen-cookware" data-step="cookware">
+        <h2>What Type of Cookware Do You Use Most?</h2>
+        <div
+          class="card-grid"
+          role="radiogroup"
+          aria-label="Cookware type"
+          data-question="cookware"
+          data-auto="true"
+        >
+          <label class="card"
+            ><input type="radio" name="cookware" value="Non-stick" /><img
+              src="images/card-nonstick.webp"
+              alt="Non-stick pan"
+              width="200"
+              height="140"
+              loading="lazy"
+            /><span>Non-stick</span></label
+          >
+          <label class="card"
+            ><input type="radio" name="cookware" value="Stainless steel" /><img
+              src="images/card-stainless.webp"
+              alt="Stainless steel pan"
+              width="200"
+              height="140"
+              loading="lazy"
+            /><span>Stainless steel</span></label
+          >
+          <label class="card"
+            ><input type="radio" name="cookware" value="Cast iron" /><img
+              src="images/card-castiron.webp"
+              alt="Cast iron pan"
+              width="200"
+              height="140"
+              loading="lazy"
+            /><span>Cast iron</span></label
+          >
+          <label class="card"
+            ><input type="radio" name="cookware" value="Ceramic" /><img
+              src="images/card-ceramic.webp"
+              alt="Ceramic pan"
+              width="200"
+              height="140"
+              loading="lazy"
+            /><span>Ceramic</span></label
+          >
+          <label class="card"
+            ><input type="radio" name="cookware" value="Other" /><img
+              src="images/card-other.webp"
+              alt="Assorted other pans"
+              width="200"
+              height="140"
+              loading="lazy"
+            /><span>Other</span></label
+          >
+        </div>
+      </section>
+
+      <!-- 8. Cookware info (dynamic per type) -->
+      <section
+        class="screen"
+        id="screen-cookware-info"
+        data-step="cookware-info"
+      >
+        <div class="screen-container">
+          <h2 id="cookwareInfoTitle">
+            Your Non-Stick Pan May Be Releasing Toxins
+          </h2>
+          <p class="copy" id="cookwareInfoLine1">
+            Non-stick coatings break down with heat and scratches.
+          </p>
+          <p class="copy" id="cookwareInfoLine2">
+            As they degrade, highly toxic chemicals can migrate into food — even
+            when the pan still looks fine.
+          </p>
+          <img
+            class="screen-img"
+            id="cookwareInfoImg"
+            loading="eager"
+            src="images/info-nonstick.webp"
+            alt="Worn pan with degraded coating"
+            width="560"
+            height="500"
+          />
+          <button class="btn-primary" type="button" data-next>
+            Next
+            <span class="arrow" aria-hidden="true">
+              <img
+                src="./images/arrow.png"
+                alt="arrownext"
+                class="arrowimg"
+                width="25"
+                height="25"
+                aria-hidden="true"
+              />
+            </span>
+          </button>
+        </div>
+      </section>
+
+      <!-- 9. Cook for -->
+      <section class="screen" id="screen-cook-for" data-step="cook-for">
+        <h2>Who Do You Usually Cook For?</h2>
+        <div
+          class="options"
+          role="radiogroup"
+          aria-label="Who you cook for"
+          data-question="cookFor"
+          data-auto="true"
+        >
+          <label class="option"
+            ><input type="radio" name="cookFor" value="Just myself" />👤 Just
+            myself</label
+          >
+          <label class="option"
+            ><input type="radio" name="cookFor" value="Me and my partner" />❤️
+            Me and my partner</label
+          >
+          <label class="option"
+            ><input type="radio" name="cookFor" value="Family with kids" />👨‍👩‍👧
+            Family with kids</label
+          >
+          <label class="option"
+            ><input type="radio" name="cookFor" value="Multiple people" />🍽
+            Multiple people</label
+          >
+        </div>
+      </section>
+
+      <!-- 10. Transfer info -->
+      <section class="screen" id="screen-transfer" data-step="transfer">
+        <h2>What Leaves the Pan Ends Up in Your Body</h2>
+        <p class="copy">
+          Every time you cook, highly toxic materials can transfer from the pan
+          into your food — and then into your body and the bodies of the people
+          you cook for.
+        </p>
+        <p class="copy">
+          These substances don&rsquo;t disappear. They accumulate over time.
+        </p>
+        <img
+          class="screen-img"
+          src="images/transfer.jpeg"
+          alt="Food cooking in a pan"
+          width="560"
+          height="380"
+        />
+        <button class="btn-primary mt-20" type="button" data-next>
+          Next
+          <span class="arrow" aria-hidden="true">
+            <img
+              src="./images/arrow.png"
+              alt="arrownext"
+              class="arrowimg"
+              width="25"
+              height="25"
+              aria-hidden="true"
+            />
+          </span>
+        </button>
+      </section>
+      <!--loader-->
+      <!-- Add this between screen-transfer and screen-assessment -->
+      <section
+        class="screen"
+        id="screen-analysis-transition"
+        data-step="analysis-transition"
+      >
+        <div class="transition-content">
+          <h2 class="text-center">Assessing Your Kitchen Safety...</h2>
+          <p class="copy text-center">
+            Analyzing your cooking frequency, heat exposure, cookware lifespan,
+            and usage methods to evaluate your kitchen safety.
+          </p>
+          <div class="loader-wrapper">
+            <div class="circle-loader"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--endloader-->
+      <!-- 11. Assessment -->
+      <section class="screen" id="screen-assessment" data-step="assessment">
+        <h1>Your Cookware Safety Assessment</h1>
+        <div class="assess-card">
+          <div class="assess-header">
+            <div class="assess-top">
+              <h3>Material Transfer Risk</h3>
+              <span class="risk-pill">High</span>
+            </div>
+            <div class="meter">
+              <div class="meter-flag">Your Level</div>
+              <div class="meter-track"></div>
+              <div class="meter-dot"></div>
+            </div>
+            <div class="meter-labels">
+              <span>Low</span><span>Medium</span><span>High</span>
+            </div>
+          </div>
+          <div class="assess-body">
+            <p>
+              Based on your answers, your cookware is exposed to frequent heat
+              and long-term use conditions known to cause toxic material
+              transfer into the body.
+            </p>
+            <div class="materials">
+              <div class="list-col">
+                <h4>Materials You're Exposed To:</h4>
+                <ul>
+                  <li>
+                    <img
+                      src="./images/prod-list-icn1.webp"
+                      alt="error"
+                      width="33"
+                      height="auto"
+                    />
+                    <p>PFAS ("forever chemicals")</p>
+                  </li>
+                  <li>
+                    <img
+                      src="./images/prod-list-icn2.webp"
+                      alt="error"
+                      width="33"
+                      height="auto"
+                    />
+                    <p>Heavy metals</p>
+                  </li>
+                  <li>
+                    <img
+                      src="./images/prod-list-icn3.webp"
+                      alt="error"
+                      width="33"
+                      height="auto"
+                    />
+                    <p>Reactive metal particles</p>
+                  </li>
+                  <li>
+                    <img
+                      src="./images/prod-list-icn4.webp"
+                      alt="error"
+                      width="33"
+                      height="auto"
+                    />
+                    <p>Degraded coating residue</p>
+                  </li>
+                </ul>
+              </div>
+              <img
+                class="pan-img"
+                src="images/info-nonstick.png"
+                alt="Worn frying pan"
+                width="300"
+                height="220"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="urgency">
+          <div class="u-head">
+            <img
+              src="./images/info-icon.webp"
+              alt="Info"
+              width="25"
+              height="25"
+            />
+            <p>Urgency Level: <span class="lvl">High</span></p>
+          </div>
+          <p class="urgency-content">
+            High material transfer means toxic substances can enter your body
+            with everyday cooking. Over time, repeated exposure may increase
+            long-term health risks.
+          </p>
+        </div>
+        <button class="btn-primary" type="button" data-next>
+          Next
+          <span class="arrow" aria-hidden="true">
+            <img
+              src="./images/arrow.png"
+              alt="arrownext"
+              class="arrowimg"
+              width="25"
+              height="25"
+              aria-hidden="true"
+            />
+          </span>
+        </button>
+      </section>
+
+      <!-- 12. Why switching fails -->
+      <section
+        class="screen fade-wrapper"
+        id="screen-why-fails"
+        data-step="why-fails"
+      >
+        <h2>Why Switching Pans Doesn&rsquo;t Fix the Problem</h2>
+        <div class="cross-list">
+          <p>❌ Non-stick has coatings that break down</p>
+          <p>❌ Ceramic still uses surface coatings</p>
+          <p>❌ Cast iron reacts with acidic food</p>
+          <p>❌ Stainless steel changes under heat</p>
+          <p class="closer">
+            Without a truly inert surface, exposure continues.
+          </p>
+        </div>
+        <button class="btn-primary" type="button" data-next>
+          Next
+          <span class="arrow" aria-hidden="true">
+            <img
+              src="./images/arrow.png"
+              alt="arrownext"
+              class="arrowimg"
+              width="25"
+              height="25"
+              aria-hidden="true"
+            />
+          </span>
+        </button>
+      </section>
+
+      <!-- 13. Recommendation -->
+      <section
+        class="screen"
+        id="screen-recommendation"
+        data-step="recommendation"
+      >
+        <h2>Your Recommended Cookware Solution</h2>
+        <p class="copy">
+          Based on your cooking habits, heat exposure, and how you use your pan,
+          the safest long-term option is
+          <strong>cookware made from pure, uncoated titanium.</strong>
+        </p>
+        <p class="copy">
+          Titanium is designed to remain inert and eliminate toxic material
+          transfer.
+        </p>
+        <div style="height: 22px"></div>
+        <button class="btn-primary" type="button" data-next>
+          Next
+          <span class="arrow" aria-hidden="true">
+            <img
+              src="./images/arrow.png"
+              alt="arrownext"
+              class="arrowimg"
+              width="25"
+              height="25"
+              aria-hidden="true"
+            />
+          </span>
+        </button>
+      </section>
+
+      <!-- 14. Product intro -->
+      <section class="screen" id="screen-product" data-step="product">
+        <h2>Meet the Plateful Titanium Pro Pan&trade;</h2>
+        <div class="product-video">
+          <video autoplay="" muted="" playsinline="" loop="">
+            <source
+              src="https://cdn.shopify.com/videos/c/o/v/203e34c2b22b42d59ccd1beab7ea0367.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+
+        <ul class="check-list">
+          <li>Protects Your Family from Toxins</li>
+          <li>Indestructible Medical-Grade Titanium</li>
+          <li>Naturally Non-Stick Without Coatings</li>
+          <li>Heats Rapidly and Evenly</li>
+          <li>Trusted by Families Across America</li>
+        </ul>
+        <button class="btn-primary" type="button" data-next>
+          Next
+          <span class="arrow" aria-hidden="true">
+            <img
+              src="./images/arrow.png"
+              alt="arrownext"
+              class="arrowimg"
+              width="25"
+              height="25"
+              aria-hidden="true"
+            />
+          </span>
+        </button>
+      </section>
+
+      <!-- 15. Feature: titanium -->
+      <section
+        class="screen"
+        id="screen-feat-titanium"
+        data-step="feat-titanium"
+      >
+        <h2>Made from Pure, Medical-Grade Titanium</h2>
+        <p class="copy">
+          Crafted from SGS-certified, medical-grade titanium with no coatings or
+          chemical layers. A stable, non-reactive surface designed for direct
+          food contact and long-term safety.
+        </p>
+        <img
+          class="screen-img"
+          src="images/feat-pure.jpeg"
+          alt="Pure titanium pan close-up"
+          width="560"
+          height="380"
+        />
+        <button class="btn-primary" type="button" data-next>
+          Next
+          <span class="arrow" aria-hidden="true">
+            <img
+              src="./images/arrow.png"
+              alt="arrownext"
+              class="arrowimg"
+              width="25"
+              height="25"
+              aria-hidden="true"
+            />
+          </span>
+        </button>
+      </section>
+
+      <!-- 16. Feature: naturally non-stick -->
+      <section
+        class="screen"
+        id="screen-feat-nonstick"
+        data-step="feat-nonstick"
+      >
+        <h2>Naturally Non-Stick</h2>
+        <p class="copy">
+          The micro-dimpled titanium surface reduces direct contact between the
+          food and the pan, helping food release more easily — without relying
+          on chemical non-stick coatings.
+        </p>
+        <img
+          class="screen-img"
+          src="images/feat-release.jpeg"
+          alt="Food releasing easily from titanium pan"
+          width="560"
+          height="380"
+        />
+        <button class="btn-primary" type="button" data-next>
+          Next
+          <span class="arrow" aria-hidden="true">
+            <img
+              src="./images/arrow.png"
+              alt="arrownext"
+              class="arrowimg"
+              width="25"
+              height="25"
+              aria-hidden="true"
+            />
+          </span>
+        </button>
+      </section>
+
+      <!-- 17. Feature: cook without limits -->
+      <section class="screen" id="screen-feat-limits" data-step="feat-limits">
+        <h2>Cook Without Limits</h2>
+        <p class="copy">
+          Built for extreme heat and total versatility. Safe for stovetop and
+          oven use up to 750&deg;F, so you can sear, roast, and finish dishes
+          with complete confidence.
+        </p>
+        <img
+          class="screen-img"
+          src="images/feat-stoves.jpeg"
+          alt="Titanium pan on high heat"
+          width="560"
+          height="380"
+        />
+        <button class="btn-primary" type="button" data-next>
+          Next
+          <span class="arrow" aria-hidden="true">
+            <img
+              src="./images/arrow.png"
+              alt="arrownext"
+              class="arrowimg"
+              width="25"
+              height="25"
+              aria-hidden="true"
+            />
+          </span>
+        </button>
+      </section>
+
+      <!-- 18. Feature: lifetime -->
+      <section
+        class="screen"
+        id="screen-feat-lifetime"
+        data-step="feat-lifetime"
+      >
+        <h2>Designed to Last a Lifetime</h2>
+        <p class="copy">
+          With no coating to degrade, peel, or wear away, this pan maintains its
+          performance for decades — built to be used daily and passed down
+          through generations.
+        </p>
+        <p class="copy">
+          Our pan also comes with
+          <strong>90 day money back guarantee and lifetime warranty.</strong>
+        </p>
+        <img
+          class="screen-img"
+          src="images/feat-lifetime-badge.jpeg"
+          alt="Durable titanium pan"
+          width="560"
+          height="380"
+        />
+        <button class="btn-primary" type="button" data-next>
+          Next
+          <span class="arrow" aria-hidden="true">
+            <img
+              src="./images/arrow.png"
+              alt="arrownext"
+              class="arrowimg"
+              width="25"
+              height="25"
+              aria-hidden="true"
+            />
+          </span>
+        </button>
+      </section>
+
+      <!-- 19. Trusted -->
+      <section class="screen" id="screen-trusted" data-step="trusted">
+        <h2>Trusted by 100,000+ Home Cooks</h2>
+        <p class="copy">
+          Thousands of verified customers rely on Plateful titanium cookware
+          every day for safer cooking, consistent results, and cookware they
+          never need to replace.
+        </p>
+        <img
+          class="screen-img"
+          src="images/customers.jpeg"
+          alt="Happy home cooks using Plateful cookware"
+          width="560"
+          height="380"
+        />
+        <button class="btn-primary" type="button" data-next>
+          Next
+          <span class="arrow" aria-hidden="true">
+            <img
+              src="./images/arrow.png"
+              alt="arrownext"
+              class="arrowimg"
+              width="25"
+              height="25"
+              aria-hidden="true"
+            />
+          </span>
+        </button>
+      </section>
+
+      <!-- 20. Submit / loading -->
+      <section class="screen" id="screen-submit" data-step="submit">
+        <h2 id="submitTitle">Applying Your $310 Discount&hellip;</h2>
+        <div class="progress-wrap">
+          <div class="progress-row">
+            <div class="row-top">
+              <span>Verifying eligibility</span><span class="pct">0%</span>
+            </div>
+            <div class="progress-bar"><div class="fill"></div></div>
+          </div>
+          <div class="progress-row">
+            <div class="row-top">
+              <span>Applying discount</span><span class="pct">0%</span>
+            </div>
+            <div class="progress-bar"><div class="fill"></div></div>
+          </div>
+          <div class="progress-row">
+            <div class="row-top">
+              <span>Preparing your offer</span><span class="pct">0%</span>
+            </div>
+            <div class="progress-bar"><div class="fill"></div></div>
+          </div>
+        </div>
+        <button class="btn-primary upper" type="button" id="ctaBtn" hidden>
+          Check My Recommended Pan
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M219.53563,121.02,50.62075,26.42762A8,8,0,0,0,39.178,36.09836l31.86106,89.211a8,8,0,0,1,0,5.38138L39.178,219.90164a8,8,0,0,0,11.44277,9.67074l168.91488-94.59233A8,8,0,0,0,219.53563,121.02Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></path><line x1="72" y1="128" x2="136" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line></svg>
+        </button>
+      </section>
+    </main>
+
+    <!-- Interstitial modal -->
+    <div
+      class="modal-overlay"
+      id="modalOverlay"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalQuestion"
+    >
+      <div class="modal">
+        <p id="modalQuestion"></p>
+        <div class="modal-btns">
+          <button type="button" data-answer="Yes">Yes</button>
+          <button type="button" data-answer="No">No</button>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js" defer></script>
+  </body>
+</html>
